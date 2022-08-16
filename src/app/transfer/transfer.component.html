@@ -1,0 +1,81 @@
+
+<div class="container-fluid">
+ 
+    <div class="row">
+      <div  class="col-md-6 p-2">
+        <br>
+        <div>
+          <img src="https://cdn.iconscout.com/icon/free/png-256/send-2196877-1851670.png" alt="" (click)="check()">
+          <h6>Send</h6>
+        </div><br><br>
+        <form  *ngIf= "im">
+            
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form6Example3">Name</label>
+              <input  type="text" id="form6Example3" class="form-control" pattern="[a-zA-Z]{3,}" title="Enter a valid Name"required  />
+              
+            </div>
+   
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form6Example4">Account Number</label>
+              <input type="tel" id="form6Example4" class="form-control"  pattern="[0-9]{10}" title="Enter 10 Digit Number" required />
+              
+            </div>
+   
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form6Example5">IFSC Code</label>  
+              <input type="text" id="form6Example5" class="form-control"  pattern="[a-zA-Z0-9]{10}" title="Enter a Valid IFSC Code" required />
+              
+            </div>
+ 
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form6Example6">Amount</label>
+              <input type="number" id="form6Example6" class="form-control" required/>
+              
+            </div>
+  
+           
+            
+            <button type="submit" class="btn btn-primary btn-block mb-4">Continue</button>
+          </form>
+      </div>
+      <div class="col-md-6 p-2">
+          <br>
+        <div>
+          <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8Zz4KICA8cGF0aCBkPSJtMjM3Ljg3IDQ5OS4zM2MtMy43NDYxIDAtNy40OTYxLTEuMzc4OS0xMC40NTctNC4zMzk4LTUuNzIyNy01LjcyMjctNS43MjI3LTE1LjE5NSAwLTIwLjkxOGwyNzYuMjUtMjc2LjI1YzUuNzIyNy01LjcyMjcgMTUuMTk1LTUuNzIyNyAyMC45MTggMCA1LjcyMjcgNS43MjI3IDUuNzIyNyAxNS4xOTUgMCAyMC45MThsLTI3Ni4yNSAyNzYuMjVjLTIuOTYwOSAyLjk2MDktNi43MTA5IDQuMzM5OC0xMC40NjEgNC4zMzk4eiIvPgogIDxwYXRoIGQ9Im00NDAuNTMgNDk5LjMzaC0yMDIuNjVjLTguMDg5OCAwLTE0LjgwMS02LjcwNy0xNC44MDEtMTQuNzk3di0yMDIuNjZjMC04LjA4OTggNi43MTA5LTE0Ljc5NyAxNC44MDEtMTQuNzk3czE0Ljc5NyA2LjcwNyAxNC43OTcgMTQuNzk3djE4Ny44NmgxODcuODZjOC4wODk4IDAgMTQuODAxIDYuNzEwOSAxNC44MDEgMTQuODAxcy02LjcxMDkgMTQuNzk3LTE0LjgwMSAxNC43OTd6Ii8+CiAgPHBhdGggZD0ibTU0My43MyA1ODguMTJoLTMzNS40NWMtOC4wODk4IDAtMTQuNzk3LTYuNzA3LTE0Ljc5Ny0xNC43OTdzNi43MDctMTQuODAxIDE0Ljc5Ny0xNC44MDFoMzM1LjQ1YzguMDg5OCAwIDE0LjgwMSA2LjcxMDkgMTQuODAxIDE0LjgwMXMtNi43MTA5IDE0Ljc5Ny0xNC44MDEgMTQuNzk3eiIvPgogPC9nPgo8L3N2Zz4K" alt=""(click)="open()" style="text-align: center;">
+          <h6>Receive</h6>
+        </div><br><br>
+        <form  *ngIf= "img">
+            
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form6Example3">Name</label>
+              <input type="text" id="form6Example3" class="form-control" pattern="[a-zA-Z]{3,}" title="Enter a valid Name" required />
+              
+            </div>
+   
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form6Example4">Account Number</label>
+              <input type="tel" id="form6Example4" class="form-control" pattern="[0-9]{10}" title="Enter 10 Digit Number"  required/>
+              
+            </div>
+   
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form6Example5">IFSC Code</label>  
+              <input type="text" id="form6Example5" class="form-control" pattern="[a-zA-Z0-9]{10}" title="Enter a Valid IFSC Code" required/>
+              
+            </div>
+ 
+           
+           
+            
+            <button type="button" class="btn btn-primary btn-block mb-4" >Continue</button>
+          </form>
+      </div> 
+    </div>
+    <div class="center"><button class="btn btn-info"  >Transfer</button></div>
+
+
+    
+  </div>
+
+  
